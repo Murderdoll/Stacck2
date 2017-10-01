@@ -1,5 +1,6 @@
 #include "Stack.hpp"
 
-int main() {
+int main() 
+{
 	stackPush();
 }
