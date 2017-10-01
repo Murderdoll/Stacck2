@@ -68,6 +68,10 @@ public:
 	{ 
 		return count_;
 	}
+	bool empty() const
+	{
+		return count() == 0;
+	}
 };
 
 void stackInit();
