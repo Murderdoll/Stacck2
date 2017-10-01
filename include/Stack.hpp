@@ -19,6 +19,11 @@ public:
 	{} //
 	Stack(size_t s) : array_size_(s) , array_(new T[s])
 	{}
+	~Stack<T>()
+	{
+                delete[] array_; 
+        }
+	
 
 	 T& operator [](int pos) 
 	 {
@@ -69,4 +74,5 @@ void stackInit();
 void stackPush();
 void stackPop();
 void stackEmpty();
+
 #endif /* STACK_HPP */
