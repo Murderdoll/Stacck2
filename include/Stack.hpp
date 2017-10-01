@@ -20,6 +20,11 @@ public:
 	Stack(size_t s) : array_size_(s) , array_(new T[s])
 	{}
 
+	 T& operator [](int pos) 
+	 {
+    	        return array_[pos];
+         }
+	
 	// функция, показывающая существующие значения в объекте
 	void showMe(size_t i)
 	{
@@ -60,4 +65,8 @@ public:
 	}
 };
 
+void stackInit();
+void stackPush();
+void stackPop();
+void stackEmpty();
 #endif /* STACK_HPP */
